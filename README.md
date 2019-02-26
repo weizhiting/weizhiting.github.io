@@ -9,7 +9,7 @@ Fusion, an important class of somatic mutation, is an ideal source of tumor-deri
 * [OptiType](https://github.com/FRED-2/OptiType)
 * [netchop](http://www.cbs.dtu.dk/cgi-bin/nph-sw_request?netchop)
 * [STAR-Fusion](https://github.com/STAR-Fusion/STAR-Fusion)
-* [pepmatch]  module of MuPeXI, for convenience, we provide this binary tool.
+* [ pepmatch ]  module of MuPeXI, for convenience, we provide this binary tool.
 
 
 #### Python package     
@@ -28,5 +28,22 @@ Fusion, an important class of somatic mutation, is an ideal source of tumor-deri
      All the other needed materials can be found at data directory   
 
 
-## Usage
+## Usage    
+
+To run neoFusion, you just need download neoFusion.py and provide all the dependencies. edit the software path in neoFusion to  
+the right path.   
+
+## Contact   
+
+Zhiting Wei   
+1632738@tongji.edu.cn
+
+Biological and Medical Big data Mining Lab    
+Tongji University    
+Shanghai, China.
+
+## neoFusion flowchart
+
+
+
 
