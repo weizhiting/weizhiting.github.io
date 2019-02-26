@@ -43,6 +43,7 @@ Tongji University
 Shanghai, China.
 
 ## neoFusion flowchart
+![](workflow.png)
 
 
 
