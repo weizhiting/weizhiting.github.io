@@ -28,18 +28,53 @@ Fusion, an important class of somatic mutation, is an ideal source of tumor-deri
      All the other needed materials can be found at data directory   
 
 ## Installation   
-#### Install via Docker   
+#### Install via Docker, highly recommended   
 Docker image of neoFusion is available at https://hub.docker.com/r/weizhiting/neofusion/.   
-if you have docker installed, you can pull the image like so:  
-docker pull weizhiting/neofusion
+if you have docker installed, you can pull the image like so:   
+    
+    docker pull weizhiting/neofusion
 
 #### Install from source   
 To install  neoFusion, you just need download neoFusion.py and all the described dependencies.
 
 
 ## Usage    
+if you install from docker:
+    
+    docker run -it weizhiting/neofusion
+    python /usr/local/neoFusion.py -h   
 
-To run neoFusion, edit the software path in neoFusion to the right path in your environment.   
+if you install from source, edit the software path in neoFusion to the right path in your environment.  
+
+Two mode are provided, denovo and midway
+In denovo, you should provide fastq files.    
+  
+    python neoFusion denovo --left 1.fq  --right 2.fq  --hla  HLA-A02:01  --genome STAR_Fusion/GRCh38/ctat/
+
+In midway, you can provide fusion transcript.    
+    
+    python neoFusion midway --fusion fusion.fa --hla HLA-A02:01     
+
+## output 
+The output file "neoscore.txt" contains all putative neoantigens information.
+
+| Column | Description |
+| - | -: |
+| HLA | HLA type |
+| mismatch | The base number different between mtpep and wtpep |
+| MTpep | fusion derived neopeptide |
+| MTpep_score | netMHCpan predicted score of mtpep |
+| MTpep_aff | netMHCpan predicted affinity of mtpep |
+| MTpep_rank | netMHCpan predicted bind rank(%) of mtpep |
+| MTpep_comb | netCTLpan predicted comb score of mtpep, combined MHC score, cleavage score and TAP score |
+| WTpep | pepmatch_db_x86_64 extracted normal peptide |
+| WTpep_score |  netMHCpan predicted score of wtpep |
+| WTpep_aff | netMHCpan predicted affinity of wtpep |
+| WTpep_rank | netMHCpan predicted bind rank(%) of wtpep |
+| WTpep_comb | netCTLpan predicted comb score of wtpep, combined MHC score, cleavage score and TAP score |
+| Hydro_Model | Neopeptide immunity measurement based on amino acid hydrophobicity |
+| R | T cell recognition score calculated based on TCR cross-reactivity |
+| Score | Immunogenicity score for neoantigens |
 
 ## Contact   
 
