@@ -34,7 +34,7 @@ if you have docker installed, you can pull the image like so:
     
     docker pull weizhiting/neofusion
 
-#### Install from source   
+#### Install from source, not recommended   
 To install  neoFusion, you just need download neoFusion.py and all the described dependencies.
 
 
@@ -44,7 +44,9 @@ if you install from docker:
     docker run -it weizhiting/neofusion
     python /usr/local/neoFusion.py -h   
 
-if you install from source, edit the software path in neoFusion to the right path in your environment.  
+if you install from source:    
+
+    edit the software path in neoFusion to the right path in your environment.  
 
 Two mode are provided, denovo and midway
 In denovo, you should provide fastq files.    
