@@ -12,7 +12,7 @@ Fusion, an important class of somatic mutation, is an ideal source of tumor-deri
 * [ pepmatch ]  module of MuPeXI, for convenience, we provide this binary tool.
 
 
-#### Python package     
+#### Python2 package     
      xgboost
      biopython
      scikit-learn
@@ -27,11 +27,19 @@ Fusion, an important class of somatic mutation, is an ideal source of tumor-deri
      please refer to STAR-Fusion for more detail.    
      All the other needed materials can be found at data directory   
 
+## Installation   
+#### Install via Docker   
+Docker image of neoFusion is available at https://hub.docker.com/r/weizhiting/neofusion/.   
+if you have docker installed, you can pull the image like so:  
+docker pull weizhiting/neofusion
+
+#### Install from source   
+To install  neoFusion, you just need download neoFusion.py and all the described dependencies.
+
 
 ## Usage    
 
-To run neoFusion, you just need download neoFusion.py and provide all the dependencies. edit the software path in neoFusion to  
-the right path.   
+To run neoFusion, edit the software path in neoFusion to the right path in your environment.   
 
 ## Contact   
 
