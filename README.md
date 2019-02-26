@@ -1,3 +1,9 @@
 # weizhiting.github.io
 something about statistics
-t.test
+t.testdfdfd
+dfdfd
+dfdf
+dfdfdfdf
+dfdfdfd
+dfdfdfd
+dfdfd
