@@ -48,12 +48,11 @@ if you install from source:
 
     edit the software path in neoFusion to the right path in your environment.  
 
-Two mode are provided, denovo and midway
-In denovo, you should provide fastq files.    
+Two mode are provided, denovo and midway. In denovo, you should provide fastq files.    
   
     python neoFusion denovo --left 1.fq  --right 2.fq  --hla  HLA-A02:01  --genome STAR_Fusion/GRCh38/ctat/
 
-In midway, you can provide fusion transcript.    
+In midway, you can provide fusion transcripts in fa format.    
     
     python neoFusion midway --fusion fusion.fa --hla HLA-A02:01     
 
@@ -74,9 +73,9 @@ The output file "neoscore.txt" contains all putative neoantigens information.
 | WTpep_aff | netMHCpan predicted affinity of wtpep |
 | WTpep_rank | netMHCpan predicted bind rank(%) of wtpep |
 | WTpep_comb | netCTLpan predicted comb score of wtpep, combined MHC score, cleavage score and TAP score |
-| Hydro_Model | Neopeptide immunity measurement based on amino acid hydrophobicity |
+| Hydro_Model | peptide immunity measurement based on amino acid hydrophobicity |
 | R | T cell recognition score calculated based on TCR cross-reactivity |
-| Score | Immunogenicity score for neoantigens |
+| Score | Immunogenicity score of neoantigens |
 
 ## Contact   
 
