@@ -9,7 +9,7 @@ Fusion, an important class of somatic mutation, is an ideal source of tumor-deri
 * [OptiType](https://github.com/FRED-2/OptiType)
 * [netchop](http://www.cbs.dtu.dk/cgi-bin/nph-sw_request?netchop)
 * [STAR-Fusion](https://github.com/STAR-Fusion/STAR-Fusion)
-* pepmatch  module of MuPeXI, for convenience, we provide this binary tool.
+* [pepmatch]  module of MuPeXI, for convenience, we provide this binary tool.
 
 
 #### Python package     
@@ -23,7 +23,9 @@ Fusion, an important class of somatic mutation, is an ideal source of tumor-deri
      pickle   
 
 #### reference  
-     download from (https://data.broadinstitute.org/Trinity/CTAT_RESOURCE_LIB/) please refer to STAR-Fusion for more detail.        All the other needed materials can be found at data directory   
+     download from (https://data.broadinstitute.org/Trinity/CTAT_RESOURCE_LIB/)    
+     please refer to STAR-Fusion for more detail.    
+     All the other needed materials can be found at data directory   
 
 
 ## Usage
